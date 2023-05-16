@@ -21,6 +21,7 @@ function generer() {
     if (monFormulaire.elements["symbole"]) {
         listecar = listecar + carspecial;
     }
+    //console.log(listecar.lenght);
     for (var i  = 1; i <= monFormulaire.elements["nombre_caractere"].value; i++) {
         var randomNumber = Math.floor(Math.random() * listecar.lenght);
         password = password + listecar.substring(randomNumber, randomNumber + 1);
