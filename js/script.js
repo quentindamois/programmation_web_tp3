@@ -4,7 +4,7 @@ function generer() {
     var chiffre = "0123456789";
     var carspecial = "%!&*^()#$:";
     var monFormulaire = document.forms.ajoutPWD;
-    console.log(monFormulaire.nombrecar.value);
+    console.log(document.forms.ajoutPWD.nombrecar.value);
     var password = "";
     var listecar = "";
     if (monFormulaire.elements["minuscule"].checked) {
@@ -14,7 +14,7 @@ function generer() {
         listecar = listecar + majuscule;
     }
     if (monFormulaire.elements["chiffre"].checked) {
-        listecar = listecar + carspecial;
+        listecar = listecar + chiffre;
     }
     for (var i  = 1; i <= monFormulaire.elements["nombrecar"].value; i++) {
         var randomNumber = Math.floor(Math.random() * listecar.lenght);
