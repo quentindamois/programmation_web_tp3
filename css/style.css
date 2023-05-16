@@ -1,0 +1,104 @@
+body {
+    background-color: silver;
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    width : 92%;
+    padding:5%;
+    box-shadow: 50%;
+}
+
+header {
+    background-image: url("https://i.ytimg.com/vi/GX6tnWUvV_0/maxresdefault.jpg");
+    box-shadow: 2%;
+}
+
+footer {
+    background-image: url("https://i.ytimg.com/vi/GX6tnWUvV_0/maxresdefault.jpg");
+    box-shadow: 2%;
+    width: 100%;
+    position: static;
+    bottom: 0%;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 110%;
+}
+
+h2 {
+    text-align : center;
+    color:darkkhaki;
+    font-size: 105%;
+}
+
+a {
+    display:block;
+    font-size: 107%;
+    text-align: center;
+}
+
+
+img {
+    height: 15%;
+    width: 15%;
+    border: 50% dashed yellow;
+}
+
+section {
+    text-align: justify;
+}
+
+#menu {
+    padding:0% 0% 0% 0%;
+    margin:0% 0% 0% 0%;
+    list-style: none;
+    display: flex;
+}
+
+#menu:hover {
+    background-color: aquamarine;
+    transition: all 1s;
+}
+
+#menu a {
+    text-decoration-line: none;
+    border : ridge black;
+    /*background-color: bisque;*/
+}
+
+#menu a:hover {
+    color: azure;
+}
+
+#menu li:first-child {
+    background : powderblue;
+}
+
+#menu li:nth-child(2) {
+    background-color: palegoldenrod;
+}
+
+#menu li a {
+    border: solid red;
+}
+
+.c1 {
+    background-color: purple;
+}
+
+.c2 {
+    background-color: red;
+}
+
+.c3 {
+    background-color: orange;
+}
+
+.c4 {
+    background-color: yellow;
+}
+
+.c5 {
+    background-color: green;
+}
