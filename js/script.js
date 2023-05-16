@@ -19,7 +19,7 @@ function generer() {
         listecar = listecar + chiffre;
     }
     for (var i  = 1; i <= monFormulaire.elements["nombre_caractere"].value; i++) {
-        var randomNumber = Math.florr(Math.random() * listecar.lenght);
+        var randomNumber = Math.floor(Math.random() * listecar.lenght);
         password = password + listecar.substring(randomNumber, randomNumber + 1);
     }
     console.log(password);
