@@ -17,7 +17,7 @@ function generer() {
         listecar = listecar + carspecial;
     }
     for (var i  = 1; i <= monFormulaire.elements["nombrecar"].value; i++) {
-        var randomNumber = Math.florr(Math.random() * listecar.lenght);
+        var randomNumber = Math.floor(Math.random() * listecar.lenght);
         password = password + listecar.substring(randomNumber, randomNumber + 1);
     }
     console.log(password);
