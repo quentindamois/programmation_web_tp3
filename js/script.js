@@ -46,7 +46,7 @@ function generer() {
     newLine.append(col5);
     var monTableau = document.getElementById("montab");
     monTableau.appendChild(newLine);
-
+*/
 }
 console.log("Je suis la console !");
 function bienvenue()
@@ -55,5 +55,4 @@ function bienvenue()
     //setTimeout(bienvenue(),100);
 }
 setInterval(bienvenue(),5000);
-*/
-}
+
