@@ -64,3 +64,31 @@ function generer() {
 
 }
 */
+
+/*
+La fonction de génération du mot de passe
+function generer() {
+    var minuscule = "abcdefghijklmnopqrstuvwxyz";
+    var majuscule = "ABCDEFGHIJKLMONPQRSTUVWXYZ"
+    var chiffre = "0123456789";
+    var carspecial = "%!&*^()#$:";
+    var monFormulaire = document.forms.ajoutPWD;
+    console.log(monFormulaire.nombrecar.value);
+    var password = "";
+    var listecar = "";
+    if (monFormulaire.elements["minuscule"].checked) {
+        listecar = listecar + minuscule;
+    }
+    if (monFormulaire.elements["majuscule"].checked) {
+        listecar = listecar + majuscule;
+    }
+    if (monFormulaire.elements["chiffre"].checked) {
+        listecar = listecar + carspecial;
+    }
+    for (var i  = 1; i <= monFormulaire.elements["nombrecar"].value; i++) {
+        var randomNumber = Math.florr(Math.random() * listecar.lenght);
+        password = password + listecar.substring(randomNumber, randomNumber + 1);
+    }
+    console.log(password);
+}
+*/
