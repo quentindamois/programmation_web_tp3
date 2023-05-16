@@ -1,7 +1,10 @@
+//var monFormulaire = document.forms.addPWD;//forms['addPWD'];
+
 function generer() {
-    var monFormulaire = document.forms.ajoutPWD;
-    console.log(monFormulaire.nombrecar.value);
-    var newLine = document.ccreateElement("tr");
+    var monFormulaire = document.forms.addPWD;//forms['addPWD'];
+
+    console.log(monFormulaire.nombre_caractere.value);
+    var newLine = document.createElement("tr");
     var col1 = document.createElement("td");
     var col2 = document.createElement("td");
     var col3 = document.createElement("td");
@@ -19,12 +22,13 @@ function generer() {
     newLine.append(col5);
     var monTableau = document.getElementById("montab");
     monTableau.appendChild(newLine);
+    console.log("tourne")
 
 }
 console.log("Je suis la console !");
 function bienvenue()
 {
     alert('Votre formulaire a bien été envoyé');
-    setTimeout(bienvenue(),100);
+    //setTimeout(bienvenue(),100);
 }
 setInterval(bienvenue(),5000);
