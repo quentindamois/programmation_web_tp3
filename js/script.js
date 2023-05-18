@@ -34,9 +34,21 @@ function generer() {
         var randomNumber = Math.floor(Math.random() * listecar.length);
         password = password + listecar.substring(randomNumber, randomNumber + 1);
     }
-    console.log(password);}
+    console.log(password);
 
-    
-
+    var newLine = document.createElement("tr");
+    var col1 = document.createElement("td");
+    var col2 = document.createElement("td");
+    var col3 = document.createElement("td");
+    var col4 = document.createElement("td");
+    var col5 = document.createElement("td");
+    col1.textContent = monFormulaire.elements["number"].value;
+    col2.textContent = monFormulaire.elements["Date de validité"].value;
+    col3.textContent = monFormulaire.elements["monselect"].value;
+    col4.textContent = monFormulaire.elements["Site"].value;
+    col5.textContent = password;
+    newLine.append(col1, col2, col3, col4, col5);
+    var monTableau = document.getElementById("montab");
+    monTableau.appendChild(newLine);}
 
 
