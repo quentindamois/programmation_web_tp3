@@ -36,11 +36,7 @@ function generer() {
         var randomNumber = Math.floor(Math.random() * listecar.length);
         password = password + listecar.substring(randomNumber, randomNumber + 1);
     }
-    console.log("minuscule : " + (((password.match(/[a-z]/) == null) && monFormulaire.elements["minuscule"].checked)));
-    console.log("Majuscule : " + (((password.match(/[A-Z]/) == null) && monFormulaire.elements["majuscule"].checked) ));
-    console.log("chiffre : " + (((password.match(/[0-9]/) == null) && monFormulaire.elements["chiffre"].checked) ));
-    console.log("symbole : " + (((password.match(/!|[#-\&]|[\(-\+]|\^|\:/) == null) && monFormulaire.elements["symbole"].checked) ));
-    console.log(password);} while((((password.match(/[a-z]/) == null) && monFormulaire.elements["minuscule"].checked)) || (((password.match(/[A-Z]/) == null) && monFormulaire.elements["majuscule"].checked)) || (((password.match(/[0-9]/) == null) && monFormulaire.elements["chiffre"].checked) ) || (((password.match(/!|[#-\&]|[\(-\+]|\^|:/) == null) && monFormulaire.elements["symbole"].checked)));
+    console.log(password);} while(((password.match(/[a-z]/) == null) && monFormulaire.elements["minuscule"].checked) || ((password.match(/[A-Z]/) == null) && monFormulaire.elements["majuscule"].checked) || ((password.match(/[0-9]/) == null) && monFormulaire.elements["chiffre"].checked) || ((password.match(/!|[#-\&]|[\(-\+]|\^|:/) == null) && monFormulaire.elements["symbole"].checked));
     var newLine = document.createElement("tr");
     var col1 = document.createElement("td");
     var col2 = document.createElement("td");
