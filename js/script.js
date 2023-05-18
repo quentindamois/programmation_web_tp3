@@ -9,36 +9,7 @@ function bienvenue()
 setInterval(bienvenue(),5000);
 
 
-
 function generer() {
-    var minuscule = "abcdefghijklmnopqrstuvwxyz";
-    var majuscule = "ABCDEFGHIJKLMONPQRSTUVWXYZ"
-    var chiffre = "0123456789";
-    var carspecial = "%!&*^()#$:";
-    var monFormulaire = document.forms.addPWD;//forms['addPWD'];
-    console.log(monFormulaire.nombre_caractere.value);
-    var password = "";
-    var listecar = "";
-    if (monFormulaire.elements["minuscule"].checked) {
-        listecar = listecar + minuscule;
-    }
-    if (monFormulaire.elements["majuscule"].checked) {
-        listecar = listecar + majuscule;
-    }
-    if (monFormulaire.elements["chiffre"].checked) {
-        listecar = listecar + chiffre;
-    }
-    if (monFormulaire.elements["symbole"]) {
-        listecar = listecar + carspecial;
-    }
-    //console.log(listecar.lenght);
-    for (var i  = 1; i <= monFormulaire.elements["nombre_caractere"].value; i++) {
-        var randomNumber = Math.floor(Math.random() * listecar.lenght);
-        password = password + listecar.substring(randomNumber, randomNumber + 1);
-    }
-    console.log(password);
-    /*
-    var newLine = document.ccreateElement("tr");
     var monFormulaire = document.forms.addPWD;//forms['addPWD'];
 
     console.log(monFormulaire.nombre_caractere.value);
@@ -60,7 +31,8 @@ function generer() {
     newLine.append(col5);
     var monTableau = document.getElementById("montab");
     monTableau.appendChild(newLine);
-*/
+    console.log("tourne")
+
 }
 
 
