@@ -31,7 +31,6 @@ function generer() {
     newLine.append(col5);
     var monTableau = document.getElementById("montab");
     monTableau.appendChild(newLine);
-    console.log("tourne")
 
 }
 
