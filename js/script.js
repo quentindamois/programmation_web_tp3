@@ -1,5 +1,3 @@
-//var monFormulaire = document.forms.addPWD;//forms['addPWD'];
-
 console.log("Je suis la console !");
 function bienvenue()
 {
@@ -8,15 +6,15 @@ function bienvenue()
 }
 setInterval(bienvenue(),5000);
 
-
+var minuscule = "abcdefghijklmnopqrstuvwxyz";
+var majuscule = "ABCDEFGHIJKLMONPQRSTUVWXYZ"
+var chiffre = "0123456789";
+var carspecial = "%!&*^()#$:";
 
 function generer() {
-    var minuscule = "abcdefghijklmnopqrstuvwxyz";
-    var majuscule = "ABCDEFGHIJKLMONPQRSTUVWXYZ"
-    var chiffre = "0123456789";
-    var carspecial = "%!&*^()#$:";
-    var monFormulaire = document.forms.addPWD;//forms['addPWD'];
-    console.log(monFormulaire.nombre_caractere.value);
+    
+    var monFormulaire = document.forms.ajoutPWD;//forms['addPWD'];
+    //console.log(monFormulaire.nombre_caractere.value);
     var password = "";
     var listecar = "";
     if (monFormulaire.elements["minuscule"].checked) {
@@ -28,39 +26,15 @@ function generer() {
     if (monFormulaire.elements["chiffre"].checked) {
         listecar = listecar + chiffre;
     }
-    if (monFormulaire.elements["symbole"]) {
+    if (monFormulaire.elements["symbole"].checked) {
         listecar = listecar + carspecial;
     }
     //console.log(listecar.lenght);
-    for (var i  = 1; i <= monFormulaire.elements["nombre_caractere"].value; i++) {
-        var randomNumber = Math.floor(Math.random() * listecar.lenght);
+    for (var i  = 1; i <= monFormulaire.elements["number"].value; i++) {
+        var randomNumber = Math.floor(Math.random() * listecar.length);
         password = password + listecar.substring(randomNumber, randomNumber + 1);
     }
-    console.log(password);
-    /*
-    var newLine = document.ccreateElement("tr");
-    var monFormulaire = document.forms.addPWD;//forms['addPWD'];
+    console.log(password);}
 
-    console.log(monFormulaire.nombre_caractere.value);
-    var newLine = document.createElement("tr");
-    var col1 = document.createElement("td");
-    var col2 = document.createElement("td");
-    var col3 = document.createElement("td");
-    var col4 = document.createElement("td");
-    var col5 = document.createElement("td");
-    col1.textContent = "val1";
-    col2.textContent = "val2";
-    col3.textContent = "val3";
-    col4.textContent = "val4";
-    col5.textContent = "val5";
-    newLine.append(col1);
-    newLine.append(col2);
-    newLine.append(col3);
-    newLine.append(col4);
-    newLine.append(col5);
-    var monTableau = document.getElementById("montab");
-    monTableau.appendChild(newLine);
-*/
-}
-
+    
 
