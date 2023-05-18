@@ -198,7 +198,7 @@ table {
 }
 
 #section-password form{
-    background-color: antiquewhite;
+    background-color: white;
     border-radius: 7%;
     padding: 5% 2% 5% 2%;
     text-align: center;
@@ -234,16 +234,19 @@ table {
     color: white
 }
 
-#bouton-password button:nth-child(1) {
+#bouton-password input:nth-child(1) {
     background-color:green;
 }
 
-#bouton-password button:nth-child(2) {
+#bouton-password input:nth-child(2) {
     background-color: red;
 }
 
 #body-password {
     box-shadow: none;
+    /*margin: 25% 255% 25% 25%;*/
+    position: relative;
+    left: 3%;
 }
 
 #body-password footer {
