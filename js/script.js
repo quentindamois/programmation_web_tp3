@@ -12,7 +12,7 @@ setInterval(bienvenue(),5000);
 function generer() {
     var monFormulaire = document.forms.addPWD;//forms['addPWD'];
 
-    console.log(monFormulaire.nombre_caractere.value);
+    console.log(monFormulaire.number.value);
     var newLine = document.createElement("tr");
     var col1 = document.createElement("td");
     var col2 = document.createElement("td");
