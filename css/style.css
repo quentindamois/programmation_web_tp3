@@ -1,104 +1,148 @@
-body {
-    background-color: silver;
-    color: white;
-    font-family: 'Franklin Gothic Medium';
-    width : 92%;
-    padding:5%;
-    box-shadow: 50%;
+html {
+    background-color: #F9B872;
+    color: #01257D;
+    font-family:'Courier New', Courier, monospace;  
+    
 }
 
-header {
-    background-image: url("https://i.ytimg.com/vi/GX6tnWUvV_0/maxresdefault.jpg");
-    box-shadow: 2%;
-}
 
-footer {
-    background-image: url("https://i.ytimg.com/vi/GX6tnWUvV_0/maxresdefault.jpg");
-    box-shadow: 2%;
-    width: 100%;
+header
+{
+    background-image: url('../img/cyber-security-banner.png');
+    width: 90%;
+    height: 10%;
+    padding: 10px 30px 10px ;
+    margin: 10px 10px 10px;
+    box-shadow: 3px 3px 1px #01257D ;
     position: static;
-    bottom: 0%;
+    border: 3px solid wheat;
+   
 }
 
-h1 {
-    text-align: center;
-    color: black;
-    font-size: 110%;
+footer
+{
+    background-image: url('../img/cyber-security-banner.png');
+    width: 90%;
+    padding: 10px 30px 10px;
+    margin: 50px 10px 0px;
+    box-shadow: 3px 3px 1px #01257D ;
+    position: static;
+    border: 3px solid wheat;
+
+    
 }
 
-h2 {
-    text-align : center;
-    color:darkkhaki;
-    font-size: 105%;
+h1
+{
+    text-align: left;
+    font-size:30px;
+    color: red;
+
 }
 
-a {
+h2
+{
+    text-align: left;
+    font-size:20px;
+    color: red;
+
+
+}
+
+a
+{
     display:block;
-    font-size: 107%;
+    font-size:20px;
+    color: white;
     text-align: center;
+    text-decoration: none;
+
+}
+
+section
+{
+    text-justify: auto;
+
 }
 
 
-img {
-    height: 15%;
-    width: 15%;
-    border: 50% dashed yellow;
+#menu 
+{
+  padding: 0px 0px 0px ;
+  margin: 0px 0px 0px;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
+  
 
-section {
-    text-align: justify;
-}
-
-#menu {
-    padding:0% 0% 0% 0%;
-    margin:0% 0% 0% 0%;
-    list-style: none;
-    display: flex;
-}
-
-#menu:hover {
-    background-color: aquamarine;
+#menu li:first-child :hover
+{
+    color:#01257D;
+    background-color:#F9B872;
     transition: all 1s;
+    border: 3px solid wheat;
+    
+
 }
 
-#menu a {
-    text-decoration-line: none;
-    border : ridge black;
-    /*background-color: bisque;*/
+#menu li:nth-child(2) :hover
+{
+    color:#01257D;
+    background-color:#F9B872;
+    transition: all 1s;
+    border: 3px solid wheat;
+
+}
+#menu li:last-child :hover
+{
+    color:#01257D;
+    background-color:#F9B872;
+    transition: all 1s;
+    border: 3px solid wheat;
+
 }
 
-#menu a:hover {
-    color: azure;
-}
-
-#menu li:first-child {
-    background : powderblue;
-}
-
-#menu li:nth-child(2) {
-    background-color: palegoldenrod;
-}
-
-#menu li a {
-    border: solid red;
-}
-
-.c1 {
+.c1
+{
     background-color: purple;
+    color: white;
+
 }
 
-.c2 {
+.c2
+{
     background-color: red;
+    color: white;
+
 }
 
-.c3 {
+.c3
+{
     background-color: orange;
+    color: white;
+
 }
 
-.c4 {
-    background-color: yellow;
+.c4
+{
+    background-color:#ffd700 ;
+    color: white;
+
 }
 
-.c5 {
+.c5
+{
     background-color: green;
+    color: white;
+
 }
+
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+ 
