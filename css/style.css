@@ -192,13 +192,15 @@ table {
 
 
 #section-password {
-    color: blue;
+    color: black;
     text-align: center;
     width: 90%;
 }
 
 #section-password form{
-    background-color: white;
+    background-color: grey;
+    position: relative;
+    left: 2%;
     border-radius: 7%;
     padding: 5% 2% 5% 2%;
     text-align: center;
@@ -206,7 +208,7 @@ table {
 
 #section-password h1 {
     font-size : 200%;
-    color: blue;
+    color: red;
     text-align: center;
 }
 
