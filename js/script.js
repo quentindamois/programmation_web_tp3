@@ -6,17 +6,21 @@ function bienvenue()
 }
 setInterval(bienvenue(),5000);
 
-var minuscule = "abcdefghijklmnopqrstuvwxyz";
-var majuscule = "ABCDEFGHIJKLMONPQRSTUVWXYZ"
-var chiffre = "0123456789";
-var carspecial = "%!&*^()#$:";
+
+
 
 function generer() {
-    
+    var minuscule = "abcdefghijklmnopqrstuvwxyz";
+    var majuscule = "ABCDEFGHIJKLMONPQRSTUVWXYZ"
+    var chiffre = "0123456789";
+    var carspecial = "%!&*^()#$:";
     var monFormulaire = document.forms.ajoutPWD;//forms['addPWD'];
     //console.log(monFormulaire.nombre_caractere.value);
     var password = "";
     var listecar = "";
+    do {
+    password = "";
+    listecar = "";
     if (monFormulaire.elements["minuscule"].checked) {
         listecar = listecar + minuscule;
     }
@@ -34,7 +38,9 @@ function generer() {
         var randomNumber = Math.floor(Math.random() * listecar.length);
         password = password + listecar.substring(randomNumber, randomNumber + 1);
     }
-    console.log(password);}
+    } while(((password.match(/a-z/) != null) || ! monFormulaire.elements["minuscule"].checked) && ((password.match(/A-Z/) != null) || ! monFormulaire.elements["majuscule"].checked) && ((password.match(/0-9/) != null) || ! monFormulaire.elements["chiffre"].checked) && ((password.match(/!|[#-\&]|[\(-\+]|\^|:/) != null) || !monFormulaire.elements["symbole"].checked));
+    console.log(password);
+}
 
     
 
