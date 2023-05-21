@@ -37,6 +37,33 @@ function generer() {
 
 }
 */
+/*
+partie 2 : Récupérer le contenu du DOM : La focntion de génération du mot de passe
+function generer() {
+    
+    var monFormulaire = document.forms.ajoutPWD;//forms['addPWD'];
+    //console.log(monFormulaire.nombre_caractere.value);
+    var password = "";
+    var listecar = "";
+    if (monFormulaire.elements["minuscule"].checked) {
+        listecar = listecar + minuscule;
+    }
+    if (monFormulaire.elements["majuscule"].checked) {
+        listecar = listecar + majuscule;
+    }
+    if (monFormulaire.elements["chiffre"].checked) {
+        listecar = listecar + chiffre;
+    }
+    if (monFormulaire.elements["symbole"].checked) {
+        listecar = listecar + carspecial;
+    }
+    //console.log(listecar.lenght);
+    for (var i  = 1; i <= monFormulaire.elements["number"].value; i++) {
+        var randomNumber = Math.floor(Math.random() * listecar.length);
+        password = password + listecar.substring(randomNumber, randomNumber + 1);
+    }
+    console.log(password);}
+    */
 
 function generer() {
     var monFormulaire = document.forms.ajoutPWD;//forms['addPWD'];
