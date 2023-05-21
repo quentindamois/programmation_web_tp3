@@ -143,9 +143,11 @@ section
 table,.montab {
     border: 3px solid black;
     border-collapse: collapse;
-    width: 100%;
+    width: 95%;
+    height: auto;
     text-align: center;
     color: black;
+    margin: 20px 10px 0px;
   }
   
   
