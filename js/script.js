@@ -107,7 +107,7 @@ function generer() {
     monTableau.appendChild(newLine);}
 */
 
-
+//Challenge :
 function generer() {
     var monFormulaire = document.forms.ajoutPWD;//forms['addPWD'];
     //console.log(monFormulaire.nombre_caractere.value);
