@@ -1,10 +1,10 @@
 console.log("Je suis la console !");
-function bienvenue()
+function bienvenue() //Etape 1 pour afficher une fenêtre pop-up
 {
-    alert('Votre formulaire a bien été envoyé');
-    //setTimeout(bienvenue(),100);
+    alert('Votre formulaire a été envoyé');
+    //setTimeout(bienvenue(),100); Faire réapparaître la fenêtre pop-up 1 sonde (100ms) après l’avoir fermée.
+    //setInterval(bienvenue(),5000); Faire apparaître la fenêtre toutes les 5 secondes.
 }
-setInterval(bienvenue(),5000);
 
 var minuscule = "abcdefghijklmnopqrstuvwxyz";
 var majuscule = "ABCDEFGHIJKLMONPQRSTUVWXYZ"
