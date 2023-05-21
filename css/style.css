@@ -1,7 +1,8 @@
 html {
-    background-color: #F9B872;
+    background-color: white;
     color: #01257D;
-    font-family:'Courier New', Courier, monospace;  
+    font-family:'Marker Felt, fantasy', Courier, monospace;  
+    
     
 }
 
@@ -34,9 +35,10 @@ footer
 
 h1
 {
-    text-align: left;
+    /*text-align: left;*/
     font-size:30px;
-    color: red;
+    color: navy;
+    padding: 0px 0px 0px 5px;
 
 }
 
@@ -44,7 +46,8 @@ h2
 {
     text-align: left;
     font-size:20px;
-    color: red;
+    color: navy;
+    padding: 0px 0px 0px 5px;
 
 
 }
@@ -56,12 +59,15 @@ a
     color: white;
     text-align: center;
     text-decoration: none;
+    
 
 }
 
 section
 {
     text-justify: auto;
+    padding: 0px 0px 0px 40px;
+    color: black;
 
 }
 
@@ -140,18 +146,32 @@ section
 }
 
 
-table,.montab {
+#itab{
     border: 3px solid black;
-    border-collapse: collapse;
-    width: 95%;
+    /*border-collapse: collapse;*/
+    width: 91%;
     height: auto;
     text-align: center;
     color: black;
-    margin: 20px 10px 0px;
+    margin: 20px 20px 0px 25px;
+    
   }
+
+  #montab {
+    border: 3px solid black;
+    /*border-collapse: collapse;*/
+    width: 91%;
+    height: auto;
+    text-align: center;
+    color: black;
+    margin: 10px 74px 0px;
+    background-color: 	#D3D3D3;
+    font-family:'Courier New', Courier, monospace;  
+}
+
   
   
- 
+
 
   #header-password {
     display:flex;
@@ -201,12 +221,14 @@ table,.montab {
     color: black;
     text-align: center;
     width: 90%;
+    font-size:20px;
+    font-family:'Courier New', Courier, monospace; 
 }
 
 #section-password form{
-    background-color: grey;
+    background-color: #D3D3D3;
     position: relative;
-    left: 2%;
+    left: 3%;
     border-radius: 7%;
     padding: 5% 2% 5% 2%;
     text-align: center;
@@ -214,7 +236,7 @@ table,.montab {
 
 #section-password h1 {
     font-size : 200%;
-    color: red;
+    color: black;
     text-align: center;
 }
 
