@@ -139,11 +139,15 @@ section
 
 }
 
-table {
+
+table,.montab {
     border: 3px solid black;
     border-collapse: collapse;
     width: 100%;
+    text-align: center;
+    color: black;
   }
+  
   
  
 
